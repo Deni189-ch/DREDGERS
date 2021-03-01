@@ -1,0 +1,43 @@
+$textColorWhite: #ffffff;
+$whiteColor: #ffffff;
+$durkBlue: rgba(0, 102, 153, 1);
+$lighterBlue: rgba(46, 88, 128, 1);
+
+$bgColor: #e5e5e5;
+
+$bgContent: rgba(156, 186, 198, 0.3);
+$textColor: rgba(0, 102, 153, 1);
+$bgDark: rgba(191, 210, 218, 1);
+$bgLighter: rgba(225, 234, 238, 1);
+
+$bgCardsTop: rgba(240, 245, 248, 1);
+$bgCards: rgba(85, 151, 184, 1);
+
+$bgInput: rgba(236, 241, 244, 1);
+$colorInput: rgba(142, 185, 208, 1);
+
+$bgLighterCards: rgba(249, 251, 252, 1);
+
+
+
+@mixin adaptive($device) {
+  @if ($device == smartphone) {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if ($device == tablet) {
+    @media (max-width: 890px) {
+      @content;
+    }
+  } @else if ($device == notebook) {
+    @media (max-width: 1135px) {
+      @content;
+    }
+  }
+}
+
+
+
+
+ 
+

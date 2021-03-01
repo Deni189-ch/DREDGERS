@@ -1,0 +1,103 @@
+@import "../../../../styles/mixin.scss";
+
+
+.beaches {
+  width: 1920px;
+  height: 1740px;
+  left: 0px;
+  top: 237px;
+  background: $bgLighter;
+  padding-top: 237px;
+}
+
+.beaches__wrapper {
+  position: absolute;
+  width: 1140px;
+  left: 390px;
+  line-height: 150%;
+}
+
+.beaches__title {
+  margin-top: 4.375rem;
+}
+
+.beaches__text-titl {
+  font-size: 1.375rem;
+}
+
+.beaches__text {
+  font-size: 1.125rem;
+}
+
+.beaches__bnrWrapper {
+  background: $bgLighterCards;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 279px;
+  width: 1030px;
+  margin: 0 auto;
+  box-shadow: 0px 6px 15px rgba(24, 99, 171, 0.15);
+  border-radius: 16px;
+  padding: 80px 0;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.beaches__bnrSvg-wr {
+  margin-bottom: 20px;
+}
+
+.beaches__baner-text {
+  font-weight: 500;
+}
+
+.beaches__bnrCol {
+  width: 190px;
+  position: relative;
+}
+
+.beaches__bnrCol::before {
+  content: "";
+  position: absolute;
+  top: 23%;
+  right: -33%;
+  height: 33px;
+  width: 33px;
+  border-right: 4px solid #006699;
+  border-bottom: 4px solid #006699;
+  transform: rotate(-45deg);
+}
+
+.beaches__bnrCol:nth-child(3)::before {
+  content: "";
+  display: none;
+}
+
+
+.beaches__button {
+  font-weight: 500;
+  font-size: 16px;
+  background: white;
+  border-radius: 8px;
+  color: #006699;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 300px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.beaches__button-wrapper {
+  display: flex;
+  margin-top: 4.375rem;
+  justify-content: space-around;
+}
+
+.beaches__button-footer {
+  display: flex;
+  margin-top: 1.875rem;
+  justify-content: center;
+}

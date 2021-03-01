@@ -1,0 +1,20 @@
+@import "../../styles/mixin.scss";
+
+.photos-work {
+  background: $whiteColor;
+  width: 1920px;
+  min-height: 100vh;
+  padding-top: 237px;
+}
+
+.photos-work__wrapper {
+  position: absolute;
+  width: 1140px;
+  left: 390px;
+}
+
+.patents__img {
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,101 @@
+@import "../../../styles/mixin.scss";
+
+.niz-model {
+  width: 1920px;
+  height: 1100px;
+  background: $bgLighter;
+  padding-top: 337px;
+}
+
+.niz-model__wrapper {
+  position: absolute;
+  width: 1140px;
+  height: 81px;
+  left: 390px;
+  line-height: 150%;
+}
+
+.niz-model__title {
+  color: #006699;
+  font-size: 1.875rem;
+  margin-bottom: 20px;
+}
+
+hr {
+  border-color: $bgLighter;
+}
+
+.niz-model__block-info {
+  display: flex;
+}
+
+.niz-model__img-wrapper {
+  padding: 1.25rem 0;
+  @include adaptive(tablet) {
+    padding: 4.25rem 0;
+  }
+}
+
+.niz-model__logo {
+  vertical-align: middle;
+  border-style: none;
+  width: 500px;
+  height: 300px;
+  margin-right: 30px;
+}
+
+.niz-model__info-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.niz-model__info-title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.niz-model__text-wrapper {
+  display: flex;
+  // justify-content: space-between;
+}
+
+.niz-model__info-text {
+  margin-bottom: 0.2rem;
+  @include adaptive(tablet) {
+    font-size: 1rem;
+  }
+}
+
+.niz-model__info-text_right {
+  position: absolute;
+  text-align: end;
+  right: 0px;
+}
+
+.niz-model__button-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.875rem;
+}
+
+.niz-model__text {
+  font-size: 1.25rem;
+}
+
+.niz-model__margin-bottom {
+  margin-bottom: 4.375rem;
+}
+
+.niz-model__text_footer {
+  margin-bottom: 3.125rem;
+}
+
+.cards__button {
+  @include adaptive(tablet) {
+    height: 35px;
+    display: flex;
+    align-items: center;
+  }
+}

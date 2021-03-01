@@ -1,0 +1,35 @@
+@import "../../styles/mixin.scss";
+
+.footer {
+  background: $whiteColor;
+  height: 220px;
+  position: relative;
+}
+
+.footer__wrapper {
+  width: 1140px;
+  position: absolute;
+  left: 19.27%;
+  right: 57.03%;
+  top: 35.45%;
+  bottom: 35.91%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  background: url("../../assets/svg/main-logotip.svg") no-repeat;
+  background-size: contain;
+  height: 51.94px;
+  width: 40%;
+}
+
+.footer__title {
+  font-size: 1.375rem;
+  margin-bottom: 0.625rem;
+}
+
+.footer__phone {
+  color: $textColor;
+}

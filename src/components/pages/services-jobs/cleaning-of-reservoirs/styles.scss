@@ -1,0 +1,130 @@
+@import "../../../../styles/mixin.scss";
+
+.clianing {
+  width: 1920px;
+  height: 3000px;
+  left: 0px;
+  top: 237px;
+  background: $bgLighter;
+  padding-top: 237px;
+}
+
+.clianing__wrapper {
+  position: absolute;
+  width: 1140px;
+  left: 390px;
+  line-height: 150%;
+}
+
+.clianing__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 60px 0px;
+}
+
+.clianing__column {
+  background: $bgLighterCards;
+  margin: 0.625rem;
+  text-align: center;
+  width: 360px;
+  height: 405px;
+  box-shadow: 0px 6px 15px rgb(24 99 171 / 15%);
+  border-radius: 16px;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.clianing__img-wrapper {
+  padding: 50px 20px;
+}
+
+.clianing__title2 {
+  margin-top: 4.375rem;
+}
+
+.clianing__bnr-wrapper {
+  background: $bgLighterCards;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 279px;
+  width: 1030px;
+  margin: 0 auto;
+  box-shadow: 0px 6px 15px rgba(24, 99, 171, 0.15);
+  border-radius: 16px;
+  padding: 80px 0;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.clianing-svg-wr {
+  margin-bottom: 20px;
+}
+
+.clianing__baher-text {
+  font-weight: 500;
+}
+
+.clianing-col {
+  width: 190px;
+  position: relative;
+}
+
+.clianing-col::before {
+  content: "";
+  position: absolute;
+  top: 23%;
+  right: -33%;
+  height: 33px;
+  width: 33px;
+  border-right: 4px solid #006699;
+  border-bottom: 4px solid #006699;
+  transform: rotate(-45deg);
+}
+
+.clianing-col:nth-child(3)::before {
+  content: "";
+  display: none;
+}
+
+.clianing__paragraph {
+  font-weight: 400;
+}
+
+.clianing__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 4.375rem 0rem;
+}
+
+.clianing__button_footer {
+     position: absolute;
+     right: 0;
+
+  @include adaptive(tablet) {
+    right: 10.5rem;
+    width: 19%;
+    bottom: -397%;
+  }
+  @include adaptive(smartphone) {
+    right: 2.5rem;
+    width: 19%;
+    bottom: -401%;
+  }
+}
+
+.clianing__button {
+  font-weight: 500;
+  font-size: 16px;
+  background: white;
+  border-radius: 8px;
+  color: #006699;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 300px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

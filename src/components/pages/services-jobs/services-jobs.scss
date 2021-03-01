@@ -1,0 +1,49 @@
+@import "../../../styles/mixin.scss";
+
+.servises {
+  width: 1920px;
+  background: #bfd2da;
+  padding: 237px 0 300px 0;
+  height: 80vh;
+}
+
+.servises__wrapper {
+  position: absolute;
+  width: 1140px;
+  left: 390px;
+}
+
+.servises__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: -webkit-center;
+}
+
+.servises__text {
+  color: $textColor;
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+.servises__column {
+  // margin: 0.625rem;
+  // text-align: center;
+  width: 21%;
+}
+
+.servises__logo-wrapper {
+  height: 9.375rem;
+  width: 9.375rem;
+  background: $whiteColor;
+  border-radius: 50%;
+  // @include flex-Element(flex, center, center);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.servises__logo {
+  height: 6.25rem;
+}

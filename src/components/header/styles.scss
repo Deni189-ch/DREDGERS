@@ -1,0 +1,66 @@
+@import "../../styles/mixin.scss";
+
+.header {
+  // padding-top: 1.5625rem;
+  background: $whiteColor;
+  position: absolute;
+  width: 1920px;
+  height: 237px;
+  left: 0px;
+  top: 0px;
+}
+
+.header__wrapper {
+  width: 1920px;
+  height: 87px;
+  opacity: 70%;
+  background: #006699;
+  position: absolute;
+  bottom: 0;
+  background: $durkBlue;  
+}
+
+.header__logo {
+  background: url("../../assets/svg/main-logotip.svg") no-repeat center center;
+  background-size: contain;
+  height: 3.25rem;
+  display: block;
+  cursor: pointer;
+  margin-top: 30.78px;
+}
+
+.header__title {
+  font-size: 21px;
+  text-align: center;
+  font-family: 'Roboto';
+}
+
+.header__navigations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1140px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header__nav {
+  color: $textColorWhite;
+  font-size: 17px;
+  @include adaptive(smartphone) {
+    font-size: 0.75rem;
+  }
+}
+
+.header__contact {
+  color: $textColorWhite;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  &:hover {
+    color: #0397fa;
+  }
+  @include adaptive(smartphone) {
+    font-size: 0.75rem;
+  }
+}

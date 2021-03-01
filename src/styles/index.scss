@@ -1,0 +1,150 @@
+@import "./mixin.scss";
+@import "./fonts.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // background: $bgColor;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.wrapper-content {
+  position: absolute;
+  top: 237px;
+  background: $bgLighter;
+  padding: 100px 150px 200px;
+  height: 100%;
+  @include adaptive(notebook) {
+    padding: 100px 150px 100px;
+  }
+  @include adaptive(smartphone) {
+    padding: 100px 20px 100px;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p,
+li,
+h1,
+h2,
+h3 {
+  color: $textColor;
+}
+
+.FW-bold {
+  font-weight: 500;
+}
+
+
+.content {
+  background: $bgLighter;
+}
+
+.title-content {
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 100px;
+  color: $textColor;
+
+  &::before {
+    content: "";
+    width: 47px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 2px solid $textColor;    
+  }
+}
+
+.paragraph-text {
+  margin-top: 50px;
+  line-height: 1.4;
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  background: white;
+  border-radius: 8px;
+  color: #006699;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 160px;
+  height: 45px;
+  text-align: center;
+  padding: 10px;
+  &:hover {
+    box-shadow: 0 0 10px white;
+  }
+  @include adaptive(smartphone) {
+    padding: 8px 5px;
+  }
+}
+
+.list__title {
+  font-size: 22px;
+  font-weight: 500;  
+}
+
+.list__wrapper {
+  list-style-type: circle;
+  margin-left: 40px;
+}
+.list__items {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.bnr-wrapper {
+  margin: 100px 0px;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  flex-wrap: wrap;
+  padding: 60px;
+}
+.bnr-col {
+  width: 190px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 23%;
+    right: -33%;
+    height: 33px;
+    width: 33px;
+    border-right: 4px solid $durkBlue;
+    border-bottom: 4px solid $durkBlue;
+    transform: rotate(-45deg);
+
+    @include adaptive(tablet) {
+      top: 16%;
+      right: -14%;
+    }
+  }
+}
+.bnr-svg-wr {
+  margin-bottom: 20px;
+}
+//--

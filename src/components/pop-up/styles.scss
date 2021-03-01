@@ -1,0 +1,100 @@
+@import "../../styles/mixin.scss";
+
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0 102 153 / 59%);
+  z-index: 10;
+}
+
+.popup__wrapper {
+  background: $bgDark;
+  height: 571px;
+  width: 463px;
+  background: #bfd2da;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 15%;
+  @include adaptive(notebook) {
+    margin-top: 13.125rem;
+    margin-left: 20.625rem;
+  }
+  @include adaptive(tablet) {
+    margin-left: 12.8125rem;
+  }
+  @include adaptive(smartphone) {
+    margin-left: 2.8125rem;
+  }
+}
+
+.popup__exist-wrapper {
+  height: 3.125rem;
+  width: 3.125rem;
+  cursor: pointer;
+}
+
+.popup__exist {
+  position: absolute;
+  top: 1.25rem;
+  right: 0.5rem;
+  height: 0.1875rem;
+  width: 1.875rem;
+  background: #006699;
+  transform: rotate(45deg);
+  transition: 1s ease;
+  &::before {
+    content: "";
+    height: 0.1875rem;
+    width: 1.875rem;
+    background: #006699;
+    transform: rotate(90deg);
+    position: absolute;
+  }
+}
+
+.popup__text-header {
+  text-align: center;
+  font-weight: 500;
+}
+
+.popup__input {
+  width: 415px !important;
+  height: 45px;
+  border-radius: 8px !important;
+  margin: 10px 0 !important;
+  background: $bgInput !important;
+  color: $colorInput !important;
+  font-size: 18px !important;
+}
+
+.popup__textarea {
+  width: 415px !important;
+  height: 98px !important;
+  border-radius: 8px !important;
+  margin: 10px 0 !important;
+  background: $bgInput !important;
+  color: $colorInput !important;
+  font-size: 18px !important;
+}
+
+.popup__error {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.popup__button {
+  outline: none;
+  border: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+}

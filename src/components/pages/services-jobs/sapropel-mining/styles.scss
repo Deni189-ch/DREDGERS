@@ -1,0 +1,64 @@
+@import "../../../../styles/mixin.scss";
+
+.sapropel {
+  width: 1920px;
+  height: 2690px;
+  left: 0px;
+  top: 237px;
+  background: $bgLighter;
+  padding-top: 237px;
+}
+
+.sapropel__wrapper {
+  position: absolute;
+  width: 1140px;
+  left: 390px;
+  line-height: 150%;
+}
+ 
+.sapropel__title {
+  margin-top: 4.375rem;
+}
+
+.sapropel__text-titl {
+  font-size: 1.375rem;
+}
+
+.sapropel__text {
+  font-size: 1.125rem;
+}
+
+//--
+.sapropel__bnr-wrapper {
+  margin: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0px 6px 15px rgb(24 99 171 / 15%);
+  border-radius: 16px;
+  background: #f9fbfc;
+  width: 1140px;
+  height: 279px;
+  padding: 80px 20px;
+}
+
+.sapropel__bnr-col {
+  width: 190px;
+}
+.sapropel__bnr-svg-wr {
+  margin-bottom: 20px;
+}
+
+.sapropel__baher-text {
+  font-weight: 500;
+}
+
+.sapropel__button-wrapper {
+  display: flex;
+  margin-top: 4.375rem;
+  justify-content: space-evenly;
+}
+
+.clianing__button-left {
+  margin-right: 100px;
+}

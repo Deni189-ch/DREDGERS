@@ -1,0 +1,16 @@
+export enum Direction {
+  NIZHEGORODETS_1 = "/nizhegorodets/1",
+  NIZHEGORODETS_2 = "/nizhegorodets/2",
+  NIZHEGORODETS_3 = "/nizhegorodets/3",
+  PFOTOS_WORK = "/pfotos-work",
+  SERVICES_JOBS = "/services-jobs",
+  CLEANING = "/cleaning",
+  INWASH_BEACHES = "/inwash-beaches",
+  SAPROPEL_MINING = "/sapropel-mining",
+  INWASH_SANDS = "/inwash-sands",
+  RENT = "/rent",
+  ABOUT_COMPANY = "/about-company",
+  PATENTS = "/patents",
+  REVIEWS = "/reviews",
+  MAIN_PAGE = "/main-page",
+}
